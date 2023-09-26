@@ -40,6 +40,8 @@ public class CalculadoraStepDefinitions {
 	
 	@After
 	public void after() {
-		//DriverWindows.windowsSession.quit();
+		if (DriverWindows.windowsSession != null) {
+	        DriverWindows.windowsSession.quit();
+	    }
 	}
 }

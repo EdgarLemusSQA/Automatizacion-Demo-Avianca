@@ -1,5 +1,8 @@
 package stepDefinitions;
 
+import static org.junit.Assert.assertEquals;
+
+import java.io.IOException;
 import java.util.List;
 
 import cucumber.api.java.es.*;
@@ -33,7 +36,7 @@ public class ExcelStepDefinitions {
 	}
 
 	@Entonces("^podra verificar la cantidad de datos en el archivo$")
-	public void podraVerificarLaCantidadDeDatosEnElArchivo() {
-
+	public void podraVerificarLaCantidadDeDatosEnElArchivo() throws IOException {
+		assertEquals(Utilidades.leerDatosDeHojaDeExcel().size(), 3);
 	}
 }
