@@ -30,6 +30,7 @@ public class CalculadoraStepDefinitions {
 
 	@Cuando("^cuando realice la operacion (.*)$")
 	public void cuandoRealiceLaOperacion(String operacion) {
+		
 	    OnStage.theActorInTheSpotlight().attemptsTo(RealizarOperacion.matematica(operacion.replace(" ", "")));
 	}
 

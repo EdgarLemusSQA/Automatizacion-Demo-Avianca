@@ -9,6 +9,11 @@ Característica: Manejo de Archivo Excel
   Escenario: Crear archivo de excel con encabezado y datos
     Dado que el abre un archivo excel
     Cuando cuando ingrese los datos
-    |POC|Resultado|
+    |Nombre|Apellido|Telefono|Edad|
+    |Andres|Perez|3125479320|25|
+    |Maria|Jose|3154782649|22|
+    |Andrea|Escobar|3259469161|35|
+    |Juan|Ramirez|3135479651|27|
     Y cambie de lugar el archivo
+    |C:\Users\Edgar\Desktop|ArchivoPrueba|
     Entonces podra verificar el archivo

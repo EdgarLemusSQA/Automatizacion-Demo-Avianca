@@ -17,6 +17,7 @@ public class DriverWindows {
             capabilities.setCapability("platformName", "Windows");
             windowsSession = new WindowsDriver<WebElement>(new URL("http://127.0.0.1:4723"), capabilities);
             windowsSession.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+            windowsSession.manage().window().maximize();
 
         }catch(Exception e){
             e.printStackTrace();
